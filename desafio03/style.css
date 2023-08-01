@@ -1,0 +1,52 @@
+.corpo{
+    width: 100%;
+    grid-gap: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "pag sidebar";
+    grid-template-columns:minmax(0, 2.5fr) minmax(0, 15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.titulo,
+.logo {
+    width: 50%;
+    float: left;
+}
+
+.sidebar{
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+} 
+
+.pag {
+    max-width: 100%;
+    padding-left: 20px;
+
+}
+
+.img-s {
+    width: 100%;
+}
+
+/* Esconder o dropdown por padrão */
+.dropdown {
+    display: none;
+    background-color: white;
+}
+
+/* Exibir o dropdown quando o item pai for hover */
+li:hover .dropdown {
+    display: block;
+}
+
+/* Estilização adicional para o dropdown */
+.dropdown li {
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+
+.dropdown li:hover {
+    background-color: #ddd;
+}
